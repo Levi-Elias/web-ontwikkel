@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gedicht generator</title>
+</head>
+<body>
+    <h1>Gedicht generator</h1>
+    <form action="gedicht.php" method="post">
+        <label for="aantal">Aantal regels:</label>
+        <input type="number" name="aantal" id="aantal" required>
+        <br>
+        <label for="tekst">Tekst:</label>
+        <input type="text" name="tekst" id="tekst" required>
+        <br>
+        <label for="rijm">Rijm:</label>
+        <input type="text" name="rijm" id="rijm" required>
+        <br>
+        <button type="submit">Genereer</button>
+    </form>    
+</body>
+</html>
