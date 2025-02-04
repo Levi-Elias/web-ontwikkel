@@ -1,23 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gedicht generator</title>
+    <title>Liefdesbrief Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #ffe6e6;
+            color: #d63384;
+        }
+        textarea {
+            width: 80%;
+            height: 150px;
+            margin: 10px 0;
+            border: 2px solid #d63384;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: #fff0f5;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #d63384;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #b02a6f;
+        }
+        h1 {
+            font-size: 2em;
+            color: #b02a6f;
+        }
+    </style>
 </head>
 <body>
-    <h1>Gedicht generator</h1>
-    <form action="gedicht.php" method="post">
-        <label for="aantal">Aantal regels:</label>
-        <input type="number" name="aantal" id="aantal" required>
-        <br>
-        <label for="tekst">Tekst:</label>
-        <input type="text" name="tekst" id="tekst" required>
-        <br>
-        <label for="rijm">Rijm:</label>
-        <input type="text" name="rijm" id="rijm" required>
-        <br>
-        <button type="submit">Genereer</button>
-    </form>    
+    <img style="display: block;-webkit-user-select: none;margin: auto;cursor: zoom-in;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;" src="https://i.pinimg.com/736x/6b/a8/63/6ba863c0ace1c504f0eb1bf2fd6f1126.jpg" width="361" height="240">
+    <h1>💖 Liefdesbrief maker 💖</h1>
+    <p>Voer de naam van je geliefde in en schrijf je eigen romantische brief.</p>
+    <input type="text" id="name" placeholder="Naam van je geliefde">
+    <textarea id="letter" placeholder="Schrijf hier je liefdesbrief..."></textarea>
+    <button onclick="saveLetter()">💌 Bewaar Brief</button>
+    
+    <script>
+        function saveLetter() {
+            const name = document.getElementById('name').value;
+            const letter = document.getElementById('letter').value;
+            
+            if (!name || !letter.trim()) {
+                alert('Vul zowel de naam als de brief in!');
+                return;
+            }
+            
+            alert(`Brief voor ${name} is opgeslagen!`);
+        }
+    </script>
 </body>
 </html>
+
