@@ -5,29 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liefdesbrief Generator</title>
     <link rel="stylesheet" href="style.css">
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
 </head>
 <body>
-    <div class="container">
-        <img src="https://i.pinimg.com/736x/6b/a8/63/6ba863c0ace1c504f0eb1bf2fd6f1126.jpg" alt="Liefde afbeelding">
-        <h1>💖 Liefdesbrief maker 💖</h1>
-        <p>Voer de naam van je geliefde in en schrijf je eigen romantische brief.</p>
-        <input type="text" id="name" placeholder="Naam van je geliefde">
-        <textarea id="letter" placeholder="Schrijf hier je liefdesbrief..."></textarea>
-        <button onclick="saveLetter()">💌 Bewaar Brief</button>
-    </div>
+    <div class="menuWrapper">
+        <div class="container">
+            <div class="fontpreview">Test</div>
+        </div>
 
-    <script>
-        function saveLetter() {
-            const name = document.getElementById('name').value;
-            const letter = document.getElementById('letter').value;
-            
-            if (!name || !letter.trim()) {
-                alert('Vul zowel de naam als de brief in!');
-                return;
-            }
-            
-            alert(`Brief voor ${name} is opgeslagen!`);
-        }
-    </script>
+        <div class="container middle">
+            <h1 class="noselect middleTitle">💖 Liefdesbrief maker 💖</h1>
+            <div class="previewselect">
+                <img id="backgroundimage" src="https://i.pinimg.com/736x/6b/a8/63/6ba863c0ace1c504f0eb1bf2fd6f1126.jpg">
+                <p>Voer de naam van je geliefde in en schrijf je eigen romantische brief.</p>
+            <div>
+                <input type="text" id="name" placeholder="Naam van je geliefde">
+            <textarea id="letter" placeholder="Schrijf hier je liefdesbrief..."></textarea>
+            </div>
+            </div>
+ 
+            <button onclick="saveLetter()">💌 Bewaar Brief</button>
+        </div>
+        
+        <div class="container backgroundPreview">
+            <div class="preview">
+                <img class ="fit" src="https://i.pinimg.com/736x/6b/a8/63/6ba863c0ace1c504f0eb1bf2fd6f1126.jpg">
+            </div>
+            <div class="preview">
+                <img class ="fit" src="https://static.vecteezy.com/ti/gratis-vector/p1/19018344-hart-liefde-achtergrond-valentijn-kader-rood-harten-achtergrond-liefde-achtergrond-ontwerp-illustratie-valentijn-achtergrond-liefde-hart-abstract-rood-achtergrond-rood-hart-spandoek-vector.jpg"">
+            </div>
+            <div class="preview">
+                <img class ="fit" src="https://i.pinimg.com/736x/6b/a8/63/6ba863c0ace1c504f0eb1bf2fd6f1126.jpg">
+            </div>
+            <div class="preview">
+                <img class ="fit" src="https://i.pinimg.com/736x/6b/a8/63/6ba863c0ace1c504f0eb1bf2fd6f1126.jpg">
+            </div>
+            <div class="preview">
+                <img class ="fit" src="https://i.pinimg.com/736x/6b/a8/63/6ba863c0ace1c504f0eb1bf2fd6f1126.jpg">
+            </div>
+        </div>
+    </div>
+   
 </body>
+<script src="handle.js"></script>
 </html>
