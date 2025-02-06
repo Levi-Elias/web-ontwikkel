@@ -5,5 +5,11 @@ Levi
 
 opdracht: gedicht Generator
 
-Taak verdeling:
+TO DO LIST :
+
+tekst komt gelijk op het kaartje 
+
+je kan het kaartje die je wil kiezen
+
+de kaartjes worden opgeslagen en kunnen de kaartjes zien 
 
