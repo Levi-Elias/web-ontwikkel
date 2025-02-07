@@ -10,16 +10,49 @@
       integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
       crossorigin="anonymous"
     ></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&family=Pacifico&family=Sacramento&family=Parisienne&family=Allura&family=Satisfy&family=Cookie&family=Lobster&family=Playfair+Display&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="menuWrapper">
         <div class="container">
-            <div class="fontpreview">Test</div>
+            <h2>Text adjustments💕</h2>
+            <div class="text-controls">
+                <label for="textColor">Tekstkleur:</label>
+                <input type="color" id="textColor">
+    
+                <label for="fontSize">Lettergrootte:</label>
+                <input type="range" id="fontSize" min="10" max="80" value="30">
+    
+                <label>Positie:</label>
+                <button id="moveUp">⬆️</button>
+                <button id="moveDown">⬇️</button>
+                <button id="moveLeft">⬅️</button>
+                <button id="moveRight">➡️</button>
+            </div>            
         </div>
-
+        <div class="container leftContainer">
+            <h2>Kies een lettertype voor je liefdesbrief: 💌</h2>
+            <div class="fontPreviewContainer">
+                <div class="fontOption" data-font="'Dancing Script', cursive" style="font-family: 'Dancing Script', cursive;">Dancing Script</div>
+                <div class="fontOption" data-font="'Great Vibes', cursive" style="font-family: 'Great Vibes', cursive;">Great Vibes</div>
+                <div class="fontOption" data-font="'Pacifico', cursive" style="font-family: 'Pacifico', cursive;">Pacifico</div>
+                <div class="fontOption" data-font="'Sacramento', cursive" style="font-family: 'Sacramento', cursive;">Sacramento</div>
+                <div class="fontOption" data-font="'Parisienne', cursive" style="font-family: 'Parisienne', cursive;">Parisienne</div>
+                <div class="fontOption" data-font="'Allura', cursive" style="font-family: 'Allura', cursive;">Allura</div>
+                <div class="fontOption" data-font="'Satisfy', cursive" style="font-family: 'Satisfy', cursive;">Satisfy</div>
+                <div class="fontOption" data-font="'Cookie', cursive" style="font-family: 'Cookie', cursive;">Cookie</div>
+                <div class="fontOption" data-font="'Lobster', cursive" style="font-family: 'Lobster', cursive;">Lobster</div>
+                <div class="fontOption" data-font="'Garamond', serif" style="font-family: 'Garamond', serif;">Garamond</div>
+                <div class="fontOption" data-font="'Playfair Display', serif" style="font-family: 'Playfair Display', serif;">Playfair Display</div>
+            </div>
+        </div>
+        
+        
+        
         <div class="container middle">
             <h1 class="noselect middleTitle">💖 Liefdesbrief maker 💖</h1>
             <div class="previewselect">
+                <div class="gedichtText">TEST</div>
                 <img id="backgroundimage" src="https://i.pinimg.com/736x/6b/a8/63/6ba863c0ace1c504f0eb1bf2fd6f1126.jpg">
                 <p>Voer de naam van je geliefde in en schrijf je eigen romantische brief.</p>
             <div>
@@ -27,11 +60,13 @@
             <textarea id="letter" placeholder="Schrijf hier je liefdesbrief..."></textarea>
             </div>
             </div>
- 
+            <button id="generatePoemBtn">💘 Genereer Gedicht</button>
             <button onclick="saveLetter()">💌 Bewaar Brief</button>
         </div>
-        
+
+
         <div class="container backgroundPreview">
+            <h2>kies een achtergrond voor je liefdesbrief: 💌</h2>
             <div class="preview">
                 <img class ="fit" src="https://i.pinimg.com/736x/6b/a8/63/6ba863c0ace1c504f0eb1bf2fd6f1126.jpg">
             </div>
@@ -42,14 +77,18 @@
                 <img class ="fit" src="https://static.vecteezy.com/ti/gratis-vector/p1/18735567-gelukkig-valentijn-dag-14-februari-poster-valentijnsdag-dag-achtergrond-valentijnsdag-dag-groet-kaart-ontwerp-illustratie-gelukkig-valentijnsdag-dag-achtergrond-liefde-hart-ontwerp-sjabloon-liefde-hart-gratis-vector.jpg">
             </div>
             <div class="preview">
-                <img class ="fit" src="https://i.pinimg.com/736x/6b/a8/63/6ba863c0ace1c504f0eb1bf2fd6f1126.jpg">
+                <img class ="fit" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fdepositphotos.com%2Fnl%2Fphotos%2Fvalentijn-hart.html&psig=AOvVaw2UiovUpl25ZqOn94H6v_yt&ust=1738921420096000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOC9k57hrosDFQAAAAAdAAAAABBB">
             </div>
-            <div class="preview">
-                <img class ="fit" src="https://i.pinimg.com/736x/6b/a8/63/6ba863c0ace1c504f0eb1bf2fd6f1126.jpg">
+            <div class="UploadImage">
+                <label class="Addpic" for="input-file">Upload image +</label>
+                <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file">
             </div>
         </div>
     </div>
-   
+    <div class="customizeWrapper">
+        
+    </div>
+    
 </body>
-<script src="handle.js"></script>
+<script src="handle.js"></script
 </html>
