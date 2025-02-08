@@ -10,18 +10,20 @@
       integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&family=Pacifico&family=Sacramento&family=Parisienne&family=Allura&family=Satisfy&family=Cookie&family=Lobster&family=Playfair+Display&display=swap" rel="stylesheet">
 </head>
 <body>
+    <h3>Liefdesbrief Generator</h3>
     <div class="menuWrapper">
-        <div class="container">
+        <div class="container adjustmentsContainer">
             <h2>Text adjustments💕</h2>
             <div class="text-controls">
                 <label for="textColor">Tekstkleur:</label>
                 <input type="color" id="textColor">
     
                 <label for="fontSize">Lettergrootte:</label>
-                <input type="range" id="fontSize" min="10" max="80" value="30">
+                <input type="range" id="fontSize" min="10" max="40" value="30">
     
                 <label>Positie:</label>
                 <button id="moveUp">⬆️</button>
@@ -52,14 +54,19 @@
         <div class="container middle">
             <h1 class="noselect middleTitle">💖 Liefdesbrief maker 💖</h1>
             <div class="previewselect">
-                <div class="gedichtText">TEST</div>
+                <div class="gedichtText">TEST</div>`
+               
                 <img id="backgroundimage" src="https://i.pinimg.com/736x/6b/a8/63/6ba863c0ace1c504f0eb1bf2fd6f1126.jpg">
-                <p>Voer de naam van je geliefde in en schrijf je eigen romantische brief.</p>
+                <div class="fromText">From:</div>
+            </div>
+            <p>Voer de naam van je geliefde in en schrijf je eigen romantische brief.</p>
             <div>
                 <input type="text" id="name" placeholder="Naam van je geliefde">
             <textarea id="letter" placeholder="Schrijf hier je liefdesbrief..."></textarea>
+            <input type="text" id="from" placeholder="From:">
+            <input type="text" id="To" placeholder="To: (optional)">
             </div>
-            </div>
+            
             <button id="generatePoemBtn">💘 Genereer Gedicht</button>
             <button onclick="saveLetter()">💌 Bewaar Brief</button>
         </div>
@@ -68,16 +75,16 @@
         <div class="container backgroundPreview">
             <h2>kies een achtergrond voor je liefdesbrief: 💌</h2>
             <div class="preview">
-                <img class ="fit" src="https://i.pinimg.com/736x/6b/a8/63/6ba863c0ace1c504f0eb1bf2fd6f1126.jpg">
+                <img class ="fit" src="valentijns1.jpg">
             </div>
             <div class="preview">
-                <img class ="fit" src="https://static.vecteezy.com/ti/gratis-vector/p1/19018344-hart-liefde-achtergrond-valentijn-kader-rood-harten-achtergrond-liefde-achtergrond-ontwerp-illustratie-valentijn-achtergrond-liefde-hart-abstract-rood-achtergrond-rood-hart-spandoek-vector.jpg"">
+                <img class ="fit" src="valentijns2.jpg">
             </div>
             <div class="preview">
-                <img class ="fit" src="https://static.vecteezy.com/ti/gratis-vector/p1/18735567-gelukkig-valentijn-dag-14-februari-poster-valentijnsdag-dag-achtergrond-valentijnsdag-dag-groet-kaart-ontwerp-illustratie-gelukkig-valentijnsdag-dag-achtergrond-liefde-hart-ontwerp-sjabloon-liefde-hart-gratis-vector.jpg">
+                <img class ="fit" src="valentijns3.jpg">
             </div>
             <div class="preview">
-                <img class ="fit" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fdepositphotos.com%2Fnl%2Fphotos%2Fvalentijn-hart.html&psig=AOvVaw2UiovUpl25ZqOn94H6v_yt&ust=1738921420096000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOC9k57hrosDFQAAAAAdAAAAABBB">
+                <img class ="fit" src="valentijns4.jpg">
             </div>
             <div class="UploadImage">
                 <label class="Addpic" for="input-file">Upload image +</label>
@@ -85,8 +92,17 @@
             </div>
         </div>
     </div>
-    <div class="customizeWrapper">
-        
+    <div class="exampleWrapper">
+        <h3>Examples:</h3>
+        <div class="testtt">
+            <div class="container exampleContainer">
+                <img class="fit" src="Voorbeeld1.png">
+            </div>
+            <div class="container exampleContainer">
+                
+            </div>
+        </div>
+       
     </div>
     
 </body>
