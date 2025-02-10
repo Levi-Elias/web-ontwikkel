@@ -1,7 +1,10 @@
 groep : de motoren
-Emir
-Mylo
-Levi
+
+Emir : JavaScript
+
+Mylo : CSS
+
+Levi : HTML
 
 opdracht: gedicht Generator
 
